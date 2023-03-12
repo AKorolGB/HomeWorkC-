@@ -7,6 +7,6 @@ Console.WriteLine("Ошибка!!!\nВведите цифру дня недел:
 n = Convert.ToInt32(Console.ReadLine());
 }
 if (n == 6 || n == 7)
-Console.WriteLine("Да");
+Console.WriteLine("Выходной день");
 else
-Console.WriteLine("Нет");
+Console.WriteLine("Будний день");
