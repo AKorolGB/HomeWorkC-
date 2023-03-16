@@ -6,15 +6,13 @@ Console.Clear();
 Console.WriteLine("Введите пятизначное число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 string s = Convert.ToString(n);
-// double k = (double)n;
-// while (k.Length>5) {
-//     Console.WriteLine("Ошибка!!!1\nВведите пятизначное число: ");
-//     n = Convert.ToInt32(Console.ReadLine());
-// }
-// while (s<5 || s>5) {
-//     Console.WriteLine("Ошибка!!!1/nВведите пятизначное число: ");
-//     n = Convert.ToInt32(Console.ReadLine());
-// }
+double k = (double)n/10000;
+while (k<1 || k>10) {
+    Console.WriteLine("Ошибка!!!\nВведите пятизначное число: ");
+    n = Convert.ToInt32(Console.ReadLine());
+    s = Convert.ToString(n);
+    k = n/10000;
+}
 if (s[0]==s[4] && s[1]==s[3])
     Console.WriteLine("Да");
 else
