@@ -1,11 +1,14 @@
-﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+﻿
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
 
 Console.Clear();
-Console.WriteLine("Введите  число: ");
-int n = Convert.ToInt32(Console.ReadLine());
+int n = new Random().Next(100, 1000); // [100, 999]
+Console.WriteLine($"Случайное сгенерированное число {n}");
+// Console.WriteLine("Введите  число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
 int a = 0;
 int b = 0;
 while ( n > 0 ) {
@@ -14,4 +17,4 @@ while ( n > 0 ) {
    n = n/10;
 
 }
-    Console.WriteLine($"Cумму цифр в числе: {b}");  
+    Console.WriteLine($"Cумму цифр в числе: {b}"); 
