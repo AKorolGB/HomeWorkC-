@@ -25,4 +25,4 @@ int n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
 ImputArray(array);
 Console.WriteLine($"Заданный массив: [{string.Join(", ", array)}]");
-Console.WriteLine(SumEven(array));
+Console.WriteLine($"количество чётных чисел в массиве: {SumEven(array)}");
