@@ -5,7 +5,7 @@
  void ImputArray(int[] array)
  {
   for(int i = 0; i < array.Length; i++)
-  array[i] = new Random().Next(100);
+  array[i] = new Random().Next(10);
  }
 
  int SumElem(int[] array)
@@ -23,4 +23,4 @@
  int[] array = new int[n];
  ImputArray(array);
  Console.WriteLine(string.Join(",", array));
-  Console.WriteLine(SumElem(array));
+  Console.WriteLine($"сумму элементов, стоящих на нечётных позициях: {SumElem(array)}");
