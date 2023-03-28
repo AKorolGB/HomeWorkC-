@@ -7,16 +7,8 @@ void ImputArray(int[] array)
       array[i]= Convert.ToInt32(Console.ReadLine());
 }
 
-// double differencemax(double[] array)
-// {
-// double max = 0;
-//  for(int i = 0; i < array.Length; i++)
-//  {
-//   if (array[i] > max) 
-//   max = array[i];
-//  }
-//    return max;
-// }
+
+
 int PositiveElements(int[] array)
 {
   int PositiveElements = 0;
